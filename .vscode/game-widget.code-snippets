@@ -1,0 +1,7 @@
+{
+  "Snippets: GameWidget": {
+    "scope": "dart",
+    "prefix": ["game"],
+    "body": "import 'package:flutter/widgets.dart' as flutter;"
+  }
+}
