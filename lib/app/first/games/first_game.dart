@@ -1,12 +1,26 @@
 import 'dart:async';
 
 import 'package:flame/components.dart';
-import 'package:flutter_flame_playground/app_core/games/scaffold_game.dart';
 import 'package:flutter_flame_playground/gen/assets.gen.dart';
 import 'package:flutter_flame_playground/utils/extensions/assets_gen.dart';
 
+import '../../../app_core/games/components/column.dart';
+import '../../../app_core/games/material/material_game.dart';
+
 class FirstGame extends FlameScaffoldBackgroundGame {
-  FirstGame({required super.themeData}) : super(children: [_Image()]) {
+  FirstGame(super.themeData)
+      : super(
+          children: [
+            ColumnComponent(
+              children: [
+                _Image(),
+                MaterialTextComponent.title(text: 'Panda'),
+                MaterialTextComponent(text: 'Panda じゃないかも'),
+                MaterialTextComponent(text: '🍅トマトかも'),
+              ],
+            )
+          ],
+        ) {
     pauseWhenBackgrounded = false;
   }
 }

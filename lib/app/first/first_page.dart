@@ -19,7 +19,11 @@ class FirstPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('FirstPage'),
       ),
-      body: const FirstGameWidget(),
+      body: const Column(
+        children: [
+          Expanded(child: FirstGameWidget()),
+        ],
+      ),
     );
   }
 }
