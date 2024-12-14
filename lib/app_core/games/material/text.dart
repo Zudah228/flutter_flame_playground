@@ -4,7 +4,7 @@ import 'package:flutter/painting.dart';
 import 'material_game.dart';
 
 class MaterialTextComponent extends TextComponent with HasMaterialGame {
-  MaterialTextComponent({required super.text});
+  MaterialTextComponent({super.text});
 
   factory MaterialTextComponent.title({required String text}) = _Title;
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_flame_playground/app/first/games/first_game_widget.dart';
+
+import 'games/first_game_widget.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage._();
